@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Aplikasi Perpustakaan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/Users/Amarasid/Downloads/DALL·E 2025-01-02 15.02.26 - A sleek and modern logo design for a library application. The logo features an open book with pages styled to look like leaves, symbolizing growth and.webp" alt="Logo Perpustakaan" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="transaksi">
+        <h2>Formulir Transaksi</h2>
+        <form id="form-transaksi">
+            <label for="nama-buku">Nama Buku:</label>
+            <select id="nama-buku" name="nama-buku" required>
+                <option value="" disabled selected>Pilih Buku</option>
+                <option value="Buku Matematika">Buku Matematika</option>
+                <option value="Buku Fisika">Buku Fisika</option>
+                <option value="Buku Kimia">Buku Kimia</option>
+                <option value="Buku Biologi">Buku Biologi</option>
+                <option value="Buku Desain">Buku Desain</option>
+                <option value="Buku Investasi">Buku Investasi</option>
+                <option value="Buku Manajemen">Buku Manajemen</option>
+                <option value="Buku Bisnis">Buku Bisnis</option>
+                <option value="Buku Pkn">Buku Pkn</option>
+                <option value="Buku Trading">Buku Trading</option>
+            </select>
+
+            <label for="nama-transaksi">Nama Transaksi:</label>
+            <input type="text" id="nama-transaksi" name="nama-transaksi" required>
+
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+
+            <label for="kategori">Kategori:</label>
+            <input type="text" id="kategori" name="kategori" required>
+
+            <button type="submit">Simpan</button>
+        </form>
+
+        <h3>Daftar Transaksi</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Buku</th>
+                    <th>Nama Transaksi</th>
+                    <th>Jumlah</th>
+                    <th>Kategori</th>
+                </tr>
+            </thead>
+            <tbody id="transaksi-list">
+                <!-- Data transaksi akan ditambahkan secara dinamis -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aplikasi Perpustakaan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
